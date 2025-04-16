@@ -16,6 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
+@CrossOrigin(origins = "http://localhost:4200")  // Permite CORS para este controlador
 public class UserController {
     @Autowired
     private UserService userService;
